@@ -1,0 +1,425 @@
+$kul_grey : #EFF2F3
+$kul_red : #DE383C
+$kul_orange : #F23C28
+$kul_grey_old : #6C6865
+$kul_white : #fff
+$kul_def: #939196
+
+
+@import "node_modules/bootstrap/scss/bootstrap"
+
+
+
+body
+    overflow-x: hidden
+    a
+        color: #939196
+        transition: .2s ease
+    a:hover
+        color: #000
+        font-weight: 200
+    @media screen and (max-width: 600px)
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+        line-height: 1.15
+
+        
+
+    .nav-info
+        color: #000
+        background: #eaebed
+        @media screen and (max-width: 800px)
+            display: none
+
+        .nav-info-left
+            padding-top: 0.5rem
+            line-height: 1.5rem
+        
+        .nav-info-right
+        padding-top: 0
+        line-height: 1.5rem
+        
+
+        .left-border
+            padding-left: 0
+            text-align: right
+    .navbar
+        font-family: 'Montserrat'
+        padding: 0
+        background: $kul_white
+
+    .nav-flex
+        width: 100%
+        padding: 0
+        
+
+        .nav-mobile-full
+            padding-top: 0
+            padding-bottom: 0
+            .logo
+                height: 40px
+                width: auto
+                padding: 0
+            @media screen and (max-width: 800px)
+                width: 100%
+            .navbar-toggler
+                @media screen and (max-width: 800px)
+                    float: right
+                    margin-right: -20px
+        .nav-menu-content
+            margin-top: 0.45rem
+            
+            .p-2
+                padding: 0 !important
+            @media screen and (max-width: 800px)
+                position: absolute
+                margin: 0
+                left: 0
+                padding: 1.5rem
+                top: 60px
+                width: 100%
+                background: #000
+                text-align: center
+                z-index: 11
+        
+        .nav-menu-content .nav-link
+            margin-left: 5px
+            margin-right: 5px
+            transition: all .5s height
+        .nav-menu-content .nav-link:hover, .active
+            transform: scale(1.01)
+            border-bottom: $kul_red solid 3px
+
+        .navbar-content-right
+            margin-top: .4rem
+            @media screen and (max-width: 800px)
+                display: none
+    
+
+    .header
+        height: 600px
+        margin: 0
+        width: 100%
+        background: url('../images/background.png')
+        background-size: contain
+        background-repeat: no-repeat
+        @media screen and (max-width: 800px)
+            height: auto
+        
+
+
+        .header-card
+            padding: 1rem 0.5rem
+            width: 34%
+            float: right
+            margin-right: 30px
+            margin-top: 30px
+            @media screen and (max-width: 800px)
+                    width: 100%
+                    margin-right: 0
+                    z-index: 10    
+
+
+            .card-title
+                font-weight: 600
+            .card-text
+                padding-left: 10px
+                padding-right: 10px
+                font-size: 0.85rem
+            hr
+                background: $kul_red
+                height: 2px
+                border-radius: 2px
+                width: 30%
+            form
+                .form-group
+                    font-size: 1rem
+                    label
+                        font-weight: 600
+                
+                h3
+                    font-weight: 600
+
+                .header-card-per-box
+                    font-size: .8rem
+                .header-card-biaya
+                    display: block
+                button
+                    display: block
+                    width: 100%
+                    background: $kul_red
+                    border: none
+                    padding-top: 12px
+                    padding-bottom: 12px
+                    border-radius: 2px  
+
+    .adv
+        font-size: 0.9rem
+
+    .about
+        padding-top: 60px
+        padding-bottom: 50px
+        background: url('../images/group-7.png')
+        background-size: contain
+        background-position: right
+        background-repeat: no-repeat
+        
+        .container
+            .col-sm-12
+                h3
+                    font-family: 'Montserrat'
+                    font-weight: 700
+                .about-line
+                    background: $kul_red
+                    height: 1.2px
+                    border-radius: 5px
+                    width: 20%
+                    float: left
+                p
+                    color: $kul_def  
+                .about-kulina-box li
+                    list-style: url('../images/ic-check.png')
+                    color: $kul_def
+                    margin-bottom: 5px
+        @media (max-width: 800px)
+            background: #fff
+
+    .menu-jakbar
+        padding-top: 50px
+        .container
+            h2
+                font-family: 'Montserrat'
+                font-weight: 600
+                text-transform: capitalize
+            .menu-line
+                background: $kul_red
+                width: 10%
+                height: 1.5px
+                border-radius: 2px
+
+            h4
+                font-family: 'Montserrat'
+                font-weight: 600
+                margin-bottom: 30px
+            
+    
+      
+            .carousel
+                .row
+                    .card
+                        h4
+                            color: $kul_red
+                            font-weight: 600
+                            font-size: 1rem
+                            margin-bottom: 5px
+                        p
+                            font-size: 1rem
+
+
+    .menu-pusat
+        padding-top: 50px
+        padding-bottom: 30px
+        margin-bottom: 50px
+        .container
+            
+            padding-top: 20px
+            .title-menu
+                font-size: 1.5rem    
+                font-family: 'Montserrat'
+                font-weight: 700
+                margin-bottom: 20px
+                text-transform: capitalize
+
+
+            .carousel
+                .row
+                    .card
+                        h4
+                            color: $kul_red
+                            font-weight: 600
+                            font-size: 1rem
+                            margin-bottom: 5px
+                        p
+                            font-size: 1rem
+
+    .form-voucher
+        color: #fff
+        padding-top: 50px
+        padding-bottom: 50px
+        background:#626868
+        margin-bottom: 30px
+        .container
+            padding-left: 10%
+            padding-right: 10%
+
+            input
+                border-radius: 2px
+                margin: 5px
+                padding-left: 5px
+            .btn-send
+                background: $kul_red
+                color: #ffffff
+                padding-left: 50px
+                padding-right: 50px
+                transition: .5s ease-out
+
+            .btn-send:hover
+                transform: scale(1.1)
+                
+    .advantages
+        padding-top: 50px
+        h3
+            font-family: 'Montserrat'
+            font-weight: 600
+
+        hr
+            background: $kul_red
+            height: 1.5px
+            width: 90px
+            margin-bottom: 60px
+
+
+
+    .sample
+        background: url('../images/group-6.png')
+        background-position: left
+        background-size: contain
+        height: 300px
+        background-repeat: no-repeat
+        .bg-red
+            background: $kul_orange
+            height: 300px
+            padding-top: 80px
+            color: #fff
+            button
+                background: #ffffff
+                color: $kul_orange
+                padding: 18px 50px
+                border: none
+                border-radius: 5px
+
+    .testimoni
+        padding-top: 50px
+        .container
+            .img-rounded
+                display: block
+                margin: auto
+                height: 100px
+                width: 100px
+                margin-bottom: 50px
+                border-radius: 50%
+
+
+    .pre-footer
+        .col
+            h6
+                font-weight: 600
+            ul li 
+                list-style: none
+
+            .bank li
+                display: inline
+
+
+
+    @media (min-width: 768px)
+        
+            
+        .carousel-inner
+   
+            .active
+                display: block
+                + .carousel-item
+                    display: block
+                    + .carousel-item
+                        display: block
+                        + .carousel-item
+                            display: block
+                            
+            .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+                transition: none
+                + .carousel-item
+                    transition: none
+                    + .carousel-item
+                        transition: none
+                        + .carousel-item
+                            transition: none
+                            
+            .carousel-item-next, .carousel-item-prev
+                position: relative
+                transform: translate3d(0, 0, 0)
+            .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
+                position: absolute
+                top: 0
+                right: -25% 
+                z-index: -1
+                display: block
+                visibility: visible
+  
+        .active.carousel-item-left + .carousel-item-next.carousel-item-left
+            position: relative
+            transform: translate3d(-100%, 0, 0)
+            visibility: visible
+        .carousel-item-next.carousel-item-left + .carousel-item
+            position: relative
+            transform: translate3d(-100%, 0, 0)
+            visibility: visible
+            + .carousel-item
+                position: relative
+                transform: translate3d(-100%, 0, 0)
+                visibility: visible
+                + .carousel-item
+                    position: relative
+                    transform: translate3d(-100%, 0, 0)
+                    visibility: visible
+                    + .carousel-item
+                        position: relative
+                        transform: translate3d(-100%, 0, 0)
+                        visibility: visible
+                        
+  
+        .carousel-inner .carousel-item-prev.carousel-item-right
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+            display: block
+            visibility: visible
+  
+        .active.carousel-item-right + .carousel-item-prev.carousel-item-right
+            position: relative
+            transform: translate3d(100%, 0, 0)
+            visibility: visible
+            display: block
+            visibility: visible
+        .carousel-item-prev.carousel-item-right + .carousel-item
+            position: relative
+            transform: translate3d(100%, 0, 0)
+            visibility: visible
+            display: block
+            visibility: visible
+            + .carousel-item
+                position: relative
+                transform: translate3d(100%, 0, 0)
+                visibility: visible
+                display: block
+                visibility: visible
+                + .carousel-item
+                    position: relative
+                    transform: translate3d(100%, 0, 0)
+                    visibility: visible
+                    display: block
+                    visibility: visible
+                    + .carousel-item
+                        position: relative
+                        transform: translate3d(100%, 0, 0)
+                        visibility: visible
+                        display: block
+                        visibility: visible
+                          
+        .carousel-control-prev, .carousel-control-next
+            margin-top: 100px
+            background: $kul_red
+            border-radius: 50%
+            height: 50px
+            width: 50px
+            opacity: 1              

@@ -1,0 +1,18 @@
+{
+  "name": "kulina-bulma",
+  "version": "1.0.0",
+  "description": "exercise_of_kulina",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "yohni",
+  "license": "ISC"
+}
